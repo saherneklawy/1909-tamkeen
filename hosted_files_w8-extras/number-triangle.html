@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script src='jquery-3.3.1.js'></script>
+        <style>
+            #center {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .make-red {
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <input type='number' id='num'></input>
+        <button id='b'>show</button>
+        <br></br>
+        <div id='center'>
+
+        </div>
+    </body>
+    <script>
+        var x = $('#num');
+
+        function handleClick() {
+            var b = $('#center');
+            b.html('');
+
+            var inp = $('#num');    
+            n = inp.val();
+
+            inp.addClass('make-red');
+            
+            var i = 1;
+            while(i <= n) {
+                var b = $('#center');
+
+                var bo2loz = 1;
+                while(bo2loz <= i) {
+                    b.append('#');
+                    bo2loz = bo2loz + 1;
+                }
+
+                b.append('<br></br>');
+                i = i + 1;
+            }
+        }
+        
+        x.change(handleClick);
+
+    </script>
+
+</html>

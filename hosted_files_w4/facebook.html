@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <style>
+            body {
+                background-color: #e9ebee;
+            }
+
+            #container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #story-container {
+
+                width: 66.67%;
+                max-width: 500px;
+            }
+            
+            .story {
+                min-height: 250px;
+                background-color: white;
+                border: 1px solid #dee0e3;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+
+            .header {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .image {
+                background-color: #365899;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            .profile-name {
+                color:  #365899;
+                font-weight: bold;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .ar {
+                direction: rtl;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            #navbar {
+                height: 50px;
+                background-color: #365899;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #container {
+                margin-top: 60px;
+            }
+
+            #navbar-container {
+                width: 66.67%;
+                max-width: 750px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .fa-facebook {
+                color: white;
+                font-size: 30px;
+            }
+            .fa-facebook-messenger {
+                color: white;
+                font-size: 30px;
+                margin-right: 20px;
+            }
+
+            .fa-bell {
+                color:#1f1919;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id='navbar'>
+            <div id='navbar-container'>
+                    <i class="fab fa-facebook"></i>
+                    <div id='nav-right-side'>
+                        <i class="fab fa-facebook-messenger"></i>
+                        <i class="fas fa-bell"></i>
+                    </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="story-container">
+            <div class='story'>
+                <div class='header'>
+                    <div class='image'></div>
+                    <div class='profile-name'>Saher</div>
+                </div>
+                <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique elementum erat, vitae porta dui viverra non. Mauris blandit feugiat leo. Sed accumsan varius feugiat. Etiam faucibus lectus et tortor imperdiet, eu sodales justo tincidunt. Sed in commodo felis. Integer aliquam pellentesque mauris, eu pharetra diam mattis eget. Ut quis diam lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin libero risus, quis iaculis tortor mollis non. Sed non feugiat arcu.                        
+                </div>
+            </div>
+            <div class='story'>
+                    <div class='header'>
+                        <div class='image'></div>
+                        <div class='profile-name'>ساهر</div>
+                    </div>
+                    <div class="content ar">
+                            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset) البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل "ألدوس بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.                            
+                    </div>
+                </div>
+                <div class='story'>
+                        <div class='header'>
+                            <div class='image'></div>
+                            <div class='profile-name'>Saher</div>
+                        </div>
+                        <div class="content">
+                            <div class='text'>كلام فوق</div>
+                            <img src="data:image/jpeg;base64,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"/>
+                            <div class='text'>كلام فوق</div>
+                        </div>
+                    </div>
+                    <div class='story'>
+                            <div class='header'>
+                                <div class='image'></div>
+                                <div class='profile-name'>Saher</div>
+                            </div>
+                            <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique elementum erat, vitae porta dui viverra non. Mauris blandit feugiat leo. Sed accumsan varius feugiat. Etiam faucibus lectus et tortor imperdiet, eu sodales justo tincidunt. Sed in commodo felis. Integer aliquam pellentesque mauris, eu pharetra diam mattis eget. Ut quis diam lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin libero risus, quis iaculis tortor mollis non. Sed non feugiat arcu.                        
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </body>
+</html>
