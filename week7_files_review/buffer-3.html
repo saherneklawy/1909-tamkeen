@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="jquery-3.3.1.js"></script>
+        <style>
+            .in {
+                border-color: blue;
+            }
+        </style>
+    </head>
+ <body>
+     <p>الاسم</p>
+     <input type='text' id='name' class='in'></input>
+     <p>السن</p>
+     <input type='number' id='age' class='in'></input>   
+     <button id='b'>الادخال</button>
+     
+ </body>
+ <script>
+     function handleClick() {
+         var n = $('#name');
+         var a = $('#age');
+
+         var n1 = n.val();
+         var a1 = a.val();
+
+         var b = $('body');
+
+         var bo2loz = '<ul>'+
+         '<li>'+n1+'</li>'+
+         '<li>'+a1+'</li>'+
+     '</ul>';
+
+         b.append(bo2loz);
+
+     }
+
+     var x = $('#b');
+     x.click(handleClick);
+ </script>
+</html>
