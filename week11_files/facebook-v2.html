@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <script src='jquery-3.3.1.js'></script>
+        <style>
+            #container {
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+            }
+            #left {
+                width: 25%;
+                height: 100%;
+                background-color: blue;
+            }
+            #middle {
+                width: 50%;
+                height: 100%;
+                background-color: green;
+            }
+            #right {
+                width: 25%;
+                height: 100%;
+                background-color: red;
+            }
+
+            .name-container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                padding-left: 20px; 
+            }
+            .profile-pic {
+                width: 50px;
+                height: 50px;
+                background-color: black;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+            #stories {
+                height: 400px;
+                background: yellow;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .story {
+                background-color: white;
+                height: 100%;
+                width: 18%;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px;
+                background-image: url('img.jpg');
+                border-radius: 10px;
+            }
+            #story-container {
+                width: 100%;
+                height: 100%;
+                background-color: pink;
+                display: flex;
+                justify-content: center;
+            }
+
+            #vid {
+                width: 50%;
+            }
+
+            #close {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='story-container'>
+            <button id='close'>x</button>
+            <video id='vid' src="spotify-wrapped.mp4" autoplay='true'k></video>
+        </div>
+        <div id='container'>
+            <div id='left'></div>
+            <div id='middle'>
+                <div id='stories'>
+
+                    <div class='story'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='story'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='story'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='story'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='story'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                </div>
+            </div>
+            <div id='right'>
+                <h2>contacts</h2>
+                <div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                    <div class='name-container'>
+                        <div class='profile-pic'></div>
+                        <div class='name'>اسم ١٢٣١٢٣١٢٣١</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var storyC = $('#story-container');
+        storyC.hide();
+        function handleStoryClick() {
+            var c = $('#container');
+            c.hide();
+            var storyC = $('#story-container');
+            storyC.show();
+        }
+        function handleCloseClick(){
+            var c = $('#container');
+            c.show();
+            var storyC = $('#story-container');
+            storyC.hide();
+        }
+        var s = $('.story');
+        s.click(handleStoryClick);
+
+        var close = $('#close');
+        close.click(handleCloseClick);
+    </script>
+</html>
